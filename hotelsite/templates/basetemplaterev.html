@@ -1,0 +1,109 @@
+{% load static %}
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <!-- Adding some basic stuff -->
+
+    <title>Coolest Hotel</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'hotelsite/css/stylenobg.css' %}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <!-- fonts and images -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kolker+Brush&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <img src="{% static 'hotelsite/images/crown.png' %}" alt="Crown" class = "logoright">
+    <link href="https://fonts.googleapis.com/css2?family=Xanh+Mono:ital@1&display=swap" rel="stylesheet">
+
+    <!-- card/navbar creation -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <div class="card">
+      <div class="card-body">
+
+        <!-- welcoming the user if he is logged in -->
+
+        {% if user.is_authenticated %}
+          <p class = "fontgiver hellouser">Hello, {{request.user}}</p>
+        {% endif %}
+
+        <!-- Logo -->
+
+        <h4 class="card-title">Coolest Hotel</h4>
+        <p class="card-paragraph">New York</p>
+
+        <!-- Login singup and logout -->
+
+        {% if user.is_authenticated %}
+        
+          <div class = "backbox-logout"></div>
+          <a class="nav-link fontgiver logout-text" href="exitlog">Log Out</a>
+        
+        {% else %}
+          <div class = "backbox-loginsignup"></div>
+          <a class="nav-link fontgiver signup-text" href="register">Sign Up</a>
+          <a class="nav-link fontgiver login-text" href="login">Log In</a>
+
+        {% endif %}
+
+        <!-- Navbar -->
+
+        <nav class="navbar navbar-expand-sm navbar-dark">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                  <li class="nav-item active">
+                      <a class="nav-link fontgiver" href="http://127.0.0.1:8000/">Home<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item-contactus nav-item">
+                    <a class="nav-link fontgiver" href="contactus">Contact Us<span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item-aboutus nav-item">
+                      <a class="nav-link fontgiver" href="aboutwhateverthisis">About us</a>
+                  </li>
+                  <li class="nav-item active">
+                    <a class="nav-link fontgiver" href="reviews">Reviews</a>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+    </div>
+  </div>
+  <section class = "section">
+    <div class = "container">
+        {% block content %}
+        {% endblock %}
+    </div>
+  </section>
+  </body>
+
+  <!-- Footer -->
+  
+  <img src="{% static 'hotelsite/images/Instagram.png' %}" class = "logoinstagram">
+  <img src="{% static 'hotelsite/images/Facebook.png' %}" class = "logofacebook">
+  <a href=""><img src="{% static 'hotelsite/images/twitter.png' %}" class = "logotwitter"></a>
+  <div class = "footer"></div>
+  <div class = "footer2"></div>
+  <h1 class = "fontgiver footer-titletext">Coolest Hotel</h1>
+  <h1 class = "fontgiver footer-followus">Follow Us Here</h1>
+  <a href="" class = "footer-twitter">Twitter</a>
+  <a href="" class = "footer-instagram">Instagram</a>
+  <a href="" class = "footer-facebook">Facebook</a>
+  <a href = "booking">
+    <button class = "bookbutton">Book Now</button>
+  </a>
+  <div class = "footer-midbg"></div>
+  <div class = "footer-rightbg"></div>
+  <div class = "footer-leftbg"></div>
+  <p class = "footer-contactus">If You Would Like To Contact Us Press The Link Below </p> 
+  <a href="contactus" class = "footer-contactusbutton">Contact Us</a> 
+  <p class = "hotelocation">Our Hotel Is In New York Of The United States</p>  
+  <p class= "footer-c">© 2022-2023</p>
+</html> 

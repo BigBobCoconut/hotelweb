@@ -1,0 +1,23 @@
+{% extends 'basetemplaterev.html' %}
+{% load static %}
+
+{% block content %}
+    <div class = "bookbox" style="height: 370px; position: absolute; margin-top: 35px; transform: translateX(0px); width: 1000px; z-index: -1; border-radius: 40px; margin-left: 5.5%; height: 400px; box-shadow: -3px 3px 30px;"></div>
+    {% if user.is_authenticated %}
+        <p class = "fontgiver" style="position: absolute; color: rgb(255, 255, 255); border-radius: 40px; background-color: rgb(42, 40, 40); margin-top: -150px; margin-left: -200px;">Hello, {{request.user}}</p>
+    {% endif %}
+    <br>
+    <br>
+    {% for topic in topics %}
+        <div class="topic block">
+            <h2 class="subtitle fontgiver" style="margin-left: 43%; font-size: 20; color:yellow;">{{ topic.title }}</h2>
+            {% if user.is_authenticated %}
+                <a class = "fontgiver" href="{% url 'topic_detail' topic.slug %}" style="margin-left: 43%; font-size: 20; color:yellow;">Write A Review</a>
+            
+            {% else %}
+                <a class = "fontgiver" href="login" style="margin-left: 43%; font-size: 20; color:yellow;">Sign In To Write A Review</a>
+            {% endif %}
+            
+        </div>
+    {% endfor %}
+{% endblock %}

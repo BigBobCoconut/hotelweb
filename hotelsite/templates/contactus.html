@@ -1,0 +1,25 @@
+{% extends 'basetemplaterev.html' %}
+{% load static %}
+
+{% block content %}
+
+  <div class = "contactus-bgtop">
+    <h1 class = "contactus-bgtoptext fontgiver">You Can Contact Us At CoolesHotel@gmail.com Or Call Our Number 599-99-99-99</h1>
+  <div class = "contactus-sendmsgbg"></div>
+  <div class = "container" style="margin-top: -75px; margin-left: -100px;">
+    <form action="https://formspree.io/f/xoqbyolj" method="POST">
+      <input class = "contactus-yourname" placeholder = "Your Name" type="text" name = "Name" required>
+      <input class = "contactus-youremail" placeholder = "Your Email" type = "email" name = "Email" required>
+      <select class = "contactus-regiondropdown" name = "Continent" class = "fontgiver" style = "position: relative; transform: translateY(270px); margin-left: 500px; background: yellow; border-radius: 40px;">
+        <option style="color: rgb(0, 0, 0);">Europe</option>
+        <option style="color: rgb(0, 0, 0);">Asia</option>
+        <option style="color: rgb(0, 0, 0);">Australlia</option>
+        <option style="color: rgb(0, 0, 0);">Africa</option>
+        <option style="color: rgb(0, 0, 0);">North America</option>
+        <option style="color: rgb(0, 0, 0);">South America</option>
+      </select> 
+      <textarea class = "contactus-text" placeholder="Text" name = "Message" required></textarea>
+      <button class = "contactus-submitbutton" type = "Submit">Send Message</button>
+    </form>
+
+{% endblock %}

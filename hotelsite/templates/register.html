@@ -1,0 +1,19 @@
+{% extends 'basetemplaterev.html' %}
+{% load static %}
+
+{% block content %}
+  <div class = "loginbox"></div>
+  <h1 class = "register-regtext fontgiver">Register</h1>
+  <div class = "fontgiver" style="margin-left: 390px; color: black; margin-top: 20px; position: absolute;">
+    <form method="POST" action="">
+        {% csrf_token %} 
+        <h3 class="register-usernamelabel">{{ form.username.label }}</h3>
+        <h3 class="register-username">{{ form.username }}</h3>
+        <h3 class="register-password1label">{{ form.password1.label }}</h3>
+        <h3 class="register-password1">{{ form.password1 }}</h3>
+        <h3 class="regster-password2label">{{ form.password2.label }}</h3>          
+        <h3 class="register-password2">{{ form.password2 }}</h3>
+        <input class = "button fontgiver" style="margin-top: 420px; position: absolute; margin-left: 150px;" type="submit" name="Create User">
+    </form>
+  </div>
+{% endblock %}

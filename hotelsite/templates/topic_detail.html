@@ -1,0 +1,42 @@
+{% extends 'basetemplaterev.html' %}
+
+{% block content %}
+
+    <hr>
+
+    <h2 class="subtitle fontgiver">Reviews</h2>
+
+    {% for comment in topic.comments.all %}
+        <article class="media">
+            <div class="media-content">
+                <div class="content">
+                    <p class = "fontgiver">
+                        <strong class = "fontgiver">{{ comment.name }}</strong>
+                        <br>
+                        {{ comment.body }}
+                    </p>
+                </div>
+            </div>
+        </article>
+    {% empty %}
+        <div class="notification">
+            <p class = "fontgiver">No Reviews yet!</p>
+        </div>
+    {% endfor %}
+
+    <hr>
+
+    <h2 class="subtitle fontgiver">Add A Review</h2>
+
+    <form method="post" action=".">
+        {% csrf_token %}
+
+        {{ form.as_p }}
+
+        <div class="field">
+            <div class="control">
+                <button class="button is-success fontgiver">Submit</button>
+            </div>
+        </div>
+    </form>
+{% endblock %}

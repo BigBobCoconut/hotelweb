@@ -1,0 +1,599 @@
+.logoright{
+    margin-top: -5px;
+    margin-left: 742px;
+    width: 70px;
+    position: absolute;
+    z-index: 1;
+}
+
+.footer{
+    width: 100%;
+    max-height: 150px;
+    position: absolute;
+    display: block;
+    background: #292927;
+    height: 630px; 
+    margin-top: 517px;
+}
+
+.footer2{
+    max-width: 100%;
+    max-height: 450px;
+    display: block;
+    background: linear-gradient(180deg, yellow, rgb(255, 149, 0));
+    height: 630px; 
+    margin-top: 517px;
+}
+
+.footer-midbg{
+    max-height: 150px;
+    position: absolute;
+    display: block;
+    background: #292927;
+    height: 280px; 
+    margin-top: -225px; 
+    width: 250px; 
+    margin-left: 43%; 
+    border-radius: 40px;
+}
+
+.footer-rightbg{
+    max-height: 150px;
+    display: block;
+    background: #292927;
+    height: 280px; 
+    margin-top: -225px; 
+    width: 500px; 
+    margin-left: 60%; 
+    border-radius: 40px; 
+    position: relative;
+}
+
+.footer-leftbg{
+    max-height: 150px;
+    display: block;
+    background: #292927;
+    height: 280px; 
+    width: 650px; 
+    margin-left: 0px; 
+    border-radius: 40px; 
+    margin-top: -150px;
+    position: relative;
+}
+
+.footer-contactus{
+    font-style: italic; 
+    margin-left: 950px; 
+    font-size: 18px; 
+    color: rgb(186, 131, 2); 
+    z-index: 2; 
+    position: relative; 
+    margin-top: -120px;
+}
+
+.footer-c{
+    font-style: italic; 
+    margin-left: 0px; 
+    font-size: 18px; 
+    color: rgb(186, 131, 2); 
+    z-index: 2; position: relative; 
+    margin-top: -210px;
+}
+
+.hotelocation{
+    font-style: italic; 
+    margin-left: 150px; 
+    font-size: 18px; 
+    color: rgb(186, 131, 2); 
+    z-index: 2; 
+    position: relative; 
+    margin-top: -40px;
+}
+
+.footer-contactusbutton{
+    font-style: italic; 
+    margin-left: 1118px; 
+    font-size: 18px; 
+    color: rgb(186, 131, 2); 
+    z-index: 2; 
+    position: relative; 
+    margin-top: -250px;
+}
+
+.footer-followus{
+    position:absolute; 
+    margin-top: -215px; 
+    margin-left: 45.5%; 
+    font-size: 25px; 
+    font-weight: bold; 
+    z-index: 2; 
+    color: rgb(255, 179, 0);
+}
+
+.footer-twitter{
+    font-style: italic; 
+    position:absolute; 
+    margin-top: -170px; 
+    margin-left: 49%; 
+    font-size: 18px; 
+    z-index: 2; 
+    color: rgb(186, 131, 2);
+}
+
+.footer-facebook{
+    font-style: italic; 
+    position:absolute; 
+    margin-top: -110px; 
+    margin-left: 48.4%; 
+    font-size: 18px; 
+    z-index: 2; 
+    color: rgb(186, 131, 2);
+}
+
+.footer-instagram{
+    font-style: italic; 
+    position:absolute; 
+    margin-top: -140px; 
+    margin-left: 48.3%; 
+    font-size: 18px; 
+    z-index: 2; 
+    color: rgb(186, 131, 2)
+}
+
+.footer-titletext{
+    position:absolute; 
+    margin-top: -400px; 
+    margin-left: 43%; 
+    font-size: 45px; 
+    font-weight: bold; 
+    z-index: 2; 
+    color: rgb(255, 200, 0);
+}
+
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url(../images/box.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size:cover;
+    animation: change 50s infinite ease;
+}
+
+.sr-only{
+    font-weight: 900;
+    font-size: 2em;
+}
+
+.card-title{
+    font-weight: 900;
+    font-size: 5em;
+    text-align:center;
+    font-family: 'Kolker Brush', cursive;
+    margin-left: 17px; 
+    font-size: 55px
+}
+
+.card-paragraph{
+    font-weight: 900;
+    text-align:center;
+    font-family: 'Kolker Brush', cursive;
+    font-size: 35px; 
+    position: absolute; 
+    margin-left: 713px; 
+    margin-top: -41px;
+}
+
+.fontgiver{
+    font-family: 'Xanh Mono', monospace;
+}
+
+.bookbox{
+    max-height: 450px;
+    display: block;
+    background: #292927;
+    height: 480px; 
+    margin-top: 17px; 
+    width: 800px; 
+    margin-left: 8.5%; 
+    border-radius: 40px; 
+    position: absolute; 
+    box-shadow: -3px 3px 30px;
+}
+
+.booknow-toptext{
+    position: absolute; 
+    margin-left: 590px; 
+    color: yellow; 
+    margin-top: 20px;
+}
+
+.booknow-nametext{
+    position: absolute; 
+    margin-left: 370px; 
+    color: yellow; 
+    margin-top: 100px;
+}
+
+
+.booknow-emailtext{
+    position: absolute; 
+    margin-left: 370px; 
+    color: yellow; 
+    margin-top: 200px;
+}
+
+.booknow-phonetext{
+    position: absolute; 
+    margin-left: 370px; 
+    color: yellow; 
+    margin-top: 300px;
+}
+
+.booknow-button{
+    margin-left: 705px; 
+    margin-top:400px; 
+    position: absolute;
+}
+
+.contactus-sendmsgbg{
+    max-height: 450px;
+    display: block;
+    background: #292927;
+    height: 290px; 
+    position: absolute; 
+    margin-top: 70px; 
+    border-radius: 40px; 
+    width: 300px; 
+    margin-left: 320px; 
+    box-shadow: -3px 3px 30px;
+}
+
+.contactus-yourname{
+    position: relative; 
+    transform: translateY(180px); 
+    margin-left: 470px; 
+    background: yellow; 
+    border-radius: 40px;
+}
+
+.contactus-dropdown{
+    position: relative; 
+    transform: translateY(190px); 
+    margin-left: 470px; 
+    background: yellow; 
+    border-radius: 40px;
+}
+
+.contactus-submitbutton{
+    position: relative; 
+    transform: translateY(230px); 
+    margin-left: 500px; 
+    background: yellow; 
+    border-radius: 40px;
+}
+
+.contactus-text{
+    position: relative; 
+    transform: translateY(180px); 
+    margin-left: 480px; 
+    background: yellow; 
+    border-radius: 40px;
+}
+
+.contactus-youremail{
+    position: relative; 
+    transform: translateY(190px); 
+    margin-left: 470px; 
+    background: yellow; 
+    border-radius: 40px;
+}
+
+.contactus-bgtoptext{
+    font-size: 20px; 
+    margin-left:5%; 
+    margin-top:6%; 
+    color: yellow;
+}
+
+.contactus-bgtop{
+    width: 850px;
+    max-height: 450px;
+    display: block;
+    background: #292927;
+    margin-left: 100px; 
+    height: 132px; 
+    position: absolute; 
+    margin-top: 10px; 
+    border-radius: 40px; 
+    box-shadow: -3px 3px 30px; 
+    color: #292927;
+}
+
+.registerbox{
+    width: 850px;
+    max-height: 1050px;
+    position: relative;
+    display: block;
+    margin-left: 22%;
+    margin-top: 13.9%;
+    background: #292927
+}
+
+.loginbox{
+    width: 850px;
+    max-height: 1050px;
+    display: block;
+    background: #292927;
+    height: 460px; 
+    position: absolute; 
+    border-radius: 40px; 
+    width: 650px; 
+    margin-left: 250px; 
+    box-shadow: -3px 3px 30px;
+}
+
+.login-usernamelabel{
+    position: absolute; 
+    margin-top: 0px; 
+    margin-left: -50px; 
+    margin-top: 140px; 
+    color: yellow;
+}
+
+.login-passowrdlabel{
+    position: absolute; 
+    margin-top: 226px; 
+    margin-left: -45px; 
+    color: yellow;
+}
+
+.bookbox h1{
+    font-family: 'Xanh Mono', monospace;
+    position: relative;
+    transform: translateY(100%);
+    transform: translateX(25%);
+    font-size: 30px;
+}
+
+.register-regtext{
+    position:absolute; 
+    color: yellow; 
+    margin-left: 500px;
+}
+
+.register-usernamelabel{
+    position: absolute; 
+    margin-top: 0px; 
+    margin-left: -35px; 
+    margin-top: 100px; 
+    color: yellow;
+}
+
+.register-username{
+    position: absolute; 
+    margin-top: 100px; 
+    margin-left: 85px;
+}
+
+.register-password1label{
+    position: absolute; 
+    margin-top: 176px; 
+    margin-left: -35px; 
+    color: yellow;
+}
+
+.register-password1{
+    position: absolute; 
+    margin-top: 175px; 
+    margin-left: 85px;
+}
+
+.regster-password2label{
+    position: absolute; 
+    margin-top: 265px; 
+    margin-left: -30px; 
+    font-size: 25px; 
+    max-width: 20px; 
+    color: yellow;
+}
+
+.register-password2{
+    position: absolute; 
+    margin-top: 255px; 
+    margin-left: 85px;
+}
+
+.funfacts-header{
+    max-width: 350px;
+    max-height: 530px;
+    position: relative;
+    display: block;
+    left: 20%;
+    transform: translate(-50% -50%);
+    background: rgba(255, 217, 0, 0.4);
+}
+
+.funfacts-header h1{
+    text-align: center;
+    font-family: 'Xanh Mono', monospace;
+    position: relative;
+    transform: translateY(200%);
+}
+
+.storybox{
+    position: relative;
+    display: block;
+    height: 350px;
+    margin-top: 3%;
+    background: #292927;
+}
+
+.storybox p{
+    text-align: center;
+    font-family: 'Xanh Mono', monospace;
+    position: relative;
+    color: rgb(196, 196, 1);
+    transform: translateY(200%);
+}
+
+.card{
+    background: linear-gradient(360deg, yellow, rgb(255, 149, 0));
+    border-color:rgb(132, 130, 4);
+}
+
+.hellouser{
+    position: absolute; 
+    color: rgb(255, 255, 255); 
+    border-radius: 40px; 
+    background-color: rgb(42, 40, 40); 
+    margin-top: 5px; 
+    margin-left: -16.5px;
+}
+
+.backbox{
+    position: relative;
+    display: block;
+    margin-top: 3%;
+    background: #292927;
+}
+
+.backbox-logout{
+    display: block;
+    margin-top: 3%;
+    background: #292927;
+    position: absolute; 
+    margin-top: -92px; 
+    transform: translateX(1165px); 
+    width: 100px; height: 25px; 
+    border-radius: 40px; 
+    margin-left: 40px;
+}
+
+.logout-text{
+    margin-left: 80%; 
+    position: absolute; 
+    margin-top: -100px; 
+    color: silver;
+}
+
+.logoinstagram{
+    position: absolute; 
+    margin-top: 909px; 
+    z-index: 5; 
+    width: 25px; 
+    margin-left: 795px;
+}
+
+.logofacebook{
+    position: absolute; 
+    margin-top: 905px; 
+    z-index: 5; 
+    width: 50px; 
+    margin-left: 745px;
+}
+
+.logotwitter{
+    position: absolute; 
+    margin-top: 910px; 
+    z-index: 5; 
+    width: 25px; 
+    margin-left: 720px;
+}
+
+.navbar{
+    background: #292927; 
+    border-color:rgb(255, 149, 0); 
+    border-radius: 40px;
+}
+
+.nav-item-contactus{
+    position: absolute; 
+    margin-left: 85%
+}
+
+.nav-item-aboutus{
+    margin-left: 92%; 
+    position: absolute;
+}
+
+.signup-text{
+    margin-left: 83%; 
+    position: absolute; 
+    margin-top: -100px; 
+    color: silver;
+}
+
+.login-text{
+    margin-left: 78%; 
+    position: absolute; 
+    margin-top: -100px; 
+    color: silver;
+}
+
+.login-logtext{
+    position:absolute; 
+    color: yellow; 
+    margin-left: 525px;
+}
+
+.backbox-loginsignup{
+    display: block;
+    background: #292927;
+    position: absolute; 
+    margin-top: -92px; 
+    transform: translateX(1165px); 
+    width: 200px; 
+    height: 25px; 
+    border-radius: 40px;
+}
+
+.bookbutton{
+    font-family: 'Xanh Mono', monospace;
+    font-size: 25px;
+    background: linear-gradient(180deg, yellow, rgb(220, 142, 33)); 
+    color: rgb(0, 0, 0); 
+    width: 25%; 
+    margin-top: -493px; 
+    position: absolute; 
+    margin-left: 590px; 
+    border-radius: 40px; 
+    z-index: 2; 
+    height: 45px;
+}
+
+.spangood:before{
+    content:'Gordon Ramsay Rated Our Food 10/10';
+    animation: animate infinite 30s;
+}
+
+.button{
+    background-color: rgb(196, 196, 1);
+    border-radius: 40px;
+}
+
+@keyframes animate{
+    0%{
+        content: "We Have The Best Service";
+    }
+    20%{
+        content: "We Have The Best Staff";
+    }
+    40%{
+        content: "We Have A Tennis Court";
+    }
+    60%{
+        content: "We Have A large Golf Course";
+    }
+    80%{
+        content: "We Have The Best Food";
+    }
+    100%{
+        content: "Our Hotel Was Rated 5 Stars";
+    }
+}
+
+.form-check-input{
+    font-family: 'Xanh Mono', monospace;
+    font-size: 25px;
+}
